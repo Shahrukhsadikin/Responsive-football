@@ -1,0 +1,142 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*-----------
+banner style
+-------------*/
+.banner-section{
+    width: 1430;
+    height:553px ;
+    display:flex;
+    /* grid-template-columns: repeat(2,1fr); */
+    background-color:#2D25A0;
+    ;
+}
+.banner{
+    margin-top: 100px;
+}
+.text{
+    margin-left:161px ;
+    font-weight: 700px;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+a{
+    margin-top: 27px;
+    margin-left:156px;
+    padding: 10px;
+    text-decoration: none;
+    background-color:  #E02C6D;
+    color: #FFFFFF;
+}
+.banner-img img:hover{
+    transform: rotate(10deg);
+    transition: 2s;
+}
+.banner-img img{
+    width: 556px;
+    height: 438px;
+    left: 1299.01px;
+    top: 500px;
+
+}
+/*----------
+ players style
+ ------------- */
+ .players{
+     margin-top:75px ;
+     margin-left: 180px;
+     display: grid;
+     grid-template-columns: repeat(3,1fr); 
+    
+ }
+ .card{
+    margin-right: 27px;
+    margin-bottom: 36px;
+   width: 330px;
+   height: 474px;
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+   overflow: hidden;
+}
+ .player img{
+    width: 300px;
+    height: 256px;
+    padding: 15px; 
+ }
+ h2,p{
+     padding: 0px 0px 0px 15px;
+ }
+ /* ------------
+ video section
+ --------------- */
+ .video{
+     display: flex;
+     justify-content: center;
+ }
+ .video-text{
+     text-align: center;
+ }
+ /* FIFA-PARTNERS */
+ 
+
+ .title{
+     text-align: center;
+ }
+ .partners{
+    display: flex;
+    justify-content: center;
+ }
+ .FIFA-PARTNERS img{
+     width: 80px;
+     height: 50px;
+ }
+ /*------------
+  footer style 
+  ------------- */
+  .logo{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+ 
+.logo img{
+    width: 483.87px;
+    height: 110px;
+    margin-left: 14px;
+}
+.icon{
+    
+
+    background-color: grey;
+  }
+.fab{
+    flex: none;
+    order: 3;
+    align-self: center;
+    flex-grow: 0;
+    margin: 0px 14px;
+}
+/* responsiv aria */
+@media only screen and (max-width:688px) {
+    .banner-sectio{
+        flex-direction: column;
+}
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+@media only screen and (min-width:688px) and (max-width:1024px) {
+    .banner-sectio{
+        justify-content: center;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+ 
