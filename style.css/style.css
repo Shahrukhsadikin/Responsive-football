@@ -8,7 +8,6 @@ banner style
     width: 1430;
     height:553px ;
     display:flex;
-    /* grid-template-columns: repeat(2,1fr); */
     background-color:#2D25A0;
     ;
 }
@@ -123,7 +122,8 @@ a{
 /* responsiv aria */
 @media only screen and (max-width:688px) {
     .banner-sectio{
-        flex-direction: column;
+        height: 100%;
+        justify-content: center;
 }
     .players{
         grid-template-columns: repeat(1,1fr);
