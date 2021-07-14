@@ -8,8 +8,9 @@ banner style
     width: 1430;
     height:553px ;
     display:flex;
+    /* grid-template-columns: repeat(2,1fr); */
     background-color:#2D25A0;
-    ;
+    
 }
 .banner{
     margin-top: 100px;
@@ -53,10 +54,10 @@ a{
  .card{
     margin-right: 27px;
     margin-bottom: 36px;
-   width: 330px;
-   height: 474px;
-   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-   overflow: hidden;
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
 }
  .player img{
     width: 300px;
@@ -106,37 +107,67 @@ a{
     width: 483.87px;
     height: 110px;
     margin-left: 14px;
-}
-.icon{
-    
-
-    background-color: grey;
-  }
+ }
+ 
 .fab{
+    color: grey;
     flex: none;
     order: 3;
     align-self: center;
     flex-grow: 0;
     margin: 0px 14px;
-}
-/* responsiv aria */
-@media only screen and (max-width:688px) {
-    .banner-sectio{
-        height: 100%;
-        justify-content: center;
-}
-    .players{
-        grid-template-columns: repeat(1,1fr);
-    }
+ }
+ /* responsiv area */
+ @media only screen and (max-width:688px) {
+     .banner-sectio{
+         width: 500px;
+        flex-direction: column;
+        grid-row-gap: 50px;
+        flex-wrap: wrap;
+        margin:0 20px;
+        padding:65px 16px;
+     }
+     .text{
+        font-size:36px;
+        font-weight:700;
+        color: white;
+     }
+     .banner-img img{
+         width: 329px;
+         height: 259px;
+     }
     
-}
-@media only screen and (min-width:688px) and (max-width:1024px) {
-    .banner-sectio{
-        justify-content: center;
-    }
-    .players{
-        grid-template-columns: repeat(2,1fr);
-    }
-    
-}
- 
+     .players{
+         grid-template-columns: repeat(1,1fr);
+         grid-row-gap: 30px;
+     }
+     .player img{
+        width: 100%;
+        height: auto;
+     }
+     .Highlights{
+        text-align: center;
+     }
+     .footer-area{
+        width: 100%;
+        height: 80px;
+        margin: -20px 0;
+     }
+ }
+ @media only screen and (min-width:688px) and (max-width:1024px) {
+     .banner-sectio{
+         justify-content: center;
+     }
+     .players{
+         grid-template-columns: repeat(2,1fr);
+     }
+     
+ }
+  
+
+
+
+
+
+
+
