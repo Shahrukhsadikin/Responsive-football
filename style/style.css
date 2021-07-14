@@ -120,7 +120,7 @@ a{
  }
  /* responsiv area */
  @media only screen and (max-width:688px) {
-     .banner-sectio{
+     .banner-section{
         width: 400px;
         flex-direction: column;
         grid-row-gap: 50px;
@@ -157,7 +157,7 @@ a{
      }
  }
  @media only screen and (min-width:688px) and (max-width:1024px) {
-     .banner-sectio{
+     .banner-section{
         width: 400px;
          flex-direction: column;
         grid-row-gap: 50px;
